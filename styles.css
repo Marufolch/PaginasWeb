@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -217,3 +218,224 @@ footer {
         padding: 15px 20px;
     }
 }
+=======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* NAV */
+nav {
+    position: fixed;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+}
+
+nav h1 {
+    color: white;
+    font-weight: 600;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f4b400;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Montana.jpg") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 15px 30px;
+    background: #f4b400;
+    color: black;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+}
+
+/* SECTIONS */
+section {
+    padding: 80px 10%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* QUIENES SOMOS */
+.about {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+/* CABAÑAS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #f9f9f9;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+/* SERVICIOS */
+.services ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 15px;
+}
+
+.services li {
+    background: #f4b400;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* MAPA */
+iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 15px;
+}
+
+/* CONTACTO */
+.contact form {
+    display: grid;
+    gap: 15px;
+}
+
+.contact input, .contact textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.contact button {
+    padding: 12px;
+    background: #f4b400;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* WHATSAPP */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 10px ;
+    border-radius: 10%;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px){
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    nav {
+        padding: 15px 20px;
+    }
+}
+>>>>>>> 2c26b448a05e155cd7cf21f13c261a5e19d5b58f
